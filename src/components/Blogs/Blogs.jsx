@@ -11,12 +11,12 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
     },[])
     return (
-        <div>
-            <h2 className="text-4xl  font-bold">Blogs</h2>
-            {
-                blogs.map(blogs=><blog  blogs={blogs}></blog>)
-            }
-        </div>
+       
+           <div className="md:w-2/3">
+                <h2 className="lg:text-3xl md:text-2xl text-xl font-bold">Blogs : {blogs.length}</h2>
+           </div>
+           
+        
     );
 };
 
