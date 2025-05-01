@@ -1,6 +1,7 @@
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import Nav from './components/header/Nav'
+import Bookmarks from './components/BookMark/Bookmarks'
 function App() {
 
   return (
@@ -11,8 +12,9 @@ function App() {
              <Nav></Nav>
            </div>
          {/* Blogs Component */}
-        <div>
+        <div className='md:flex'>
           <Blogs></Blogs>
+          <Bookmarks></Bookmarks>
         </div>
          
       </div>
