@@ -1,13 +1,22 @@
 import './App.css'
-import Nav from './header/Nav'
+import Blogs from './components/Blogs/Blogs'
+import Nav from './components/header/Nav'
 function App() {
-  
+
   return (
     <>
       <div>
-          <Nav></Nav>
+        {/* Header Component */}
+           <div>
+             <Nav></Nav>
+           </div>
+         {/* Blogs Component */}
+        <div>
+          <Blogs></Blogs>
+        </div>
+         
       </div>
-       <h1>New Project</h1>
+      
     </>
   )
 }
