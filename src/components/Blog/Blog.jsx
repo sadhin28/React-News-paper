@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {bookmark} from "@fortawesome/free-solid-svg-icons";
+import {faBookmark} from "@fortawesome/free-solid-svg-icons";
 const Blog = ({blog}) => {
     
-   const {title,img,cover,reading_time}=blog
+   const {title,img,cover,reading_time,author}=blog
     return (
         <div>
-           <div class="card bg-base-100 w-96 shadow-sm">
+           <div class="card bg-base-100 w-100 shadow-sm">
   <figure>
     <img
       src={cover}
@@ -14,14 +14,15 @@ const Blog = ({blog}) => {
   </figure>
   <div class="card-body">
     <h2 class="card-title">
-      {title}
-     <button className="btn">{reading_time} min read <FontAwesomeIcon icon={bookmark} /></button>
+    <div className="avatar">
+                    <div className="w-10 rounded-full">
+                        <img src={img} />
+                    </div>
+                </div>
+     {author}
+     <button className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
     </h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <div class="badge badge-outline">Fashion</div>
-      <div class="badge badge-outline">Products</div>
-    </div>
+   
   </div>
 </div>
 
