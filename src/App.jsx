@@ -13,7 +13,7 @@ function App() {
              <Nav></Nav>
            </div>
          {/* Blogs Component */}
-        <div className='md:flex'>
+        <div className='md:flex gap-10'>
           <Blogs></Blogs>
           <Bookmarks></Bookmarks>
         </div>

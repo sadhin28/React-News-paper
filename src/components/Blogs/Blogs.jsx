@@ -12,7 +12,7 @@ const Blogs = () => {
     },[])
     return (
        
-           <div className="md:w-2/3">
+           <div className="md:w-2/3 grid gap-5">
                 <h2 className="lg:text-3xl md:text-2xl text-xl font-bold">Blogs : {blogs.length}</h2>
                 {
                     blogs.map(blog =><Blog kwy={blog.id} blog={blog}></Blog>)
