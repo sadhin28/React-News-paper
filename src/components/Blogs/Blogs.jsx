@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-
+import blog from "./blog";
 const Blogs = () => {
     // useState 
     const [blogs,setBlogs]=useState([]);
-    console.log(blogs)
+    // console.log(blogs)
     // useEffect 
     useEffect(()=>{
         fetch('blogs.json')
@@ -13,7 +13,7 @@ const Blogs = () => {
     return (
         <div>
             {
-                blogs.map
+                blogs.map(blogs=><blog  blogs={blogs}></blog>)
             }
         </div>
     );
