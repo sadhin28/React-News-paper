@@ -2,6 +2,7 @@ import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import Nav from './components/header/Nav'
 import Bookmarks from './components/BookMark/Bookmarks'
+
 function App() {
 
   return (
