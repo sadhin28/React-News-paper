@@ -5,7 +5,7 @@ function Nav() {
             <h1 className="font-bold text-xl lg:text-3xl md:text-2xl">Knowledge Cafe</h1>
             <div className="avatar">
                     <div className="w-10 rounded-full">
-                        <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                        <img src="/src/images/WhatsApp Image 2025-03-02 at 07.50.51_89999190.jpg" />
                     </div>
                 </div>
         
