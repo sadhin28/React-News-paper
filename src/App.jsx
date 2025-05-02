@@ -12,14 +12,14 @@ function App() {
        setBookmarks(newBookmark)
     }  
   return (
-    <div className='max-w-7xl mx-auto  text-black bg-white'>
-      <div className=' text-black bg-white'>
+    <div className='max-w-7xl mx-auto '>
+      <div >
         {/* Header Component */}
            <div>
              <Nav></Nav>
            </div>
          {/* Blogs Component */}
-        <div className='md:flex gap-10 mt-30  text-black bg-white'>
+        <div className='md:flex gap-10 mt-30 '>
           <Blogs handleAddToBookmark={handleAddToBookmark} ></Blogs>
           <Bookmarks bkMarks={bkMarks}></Bookmarks>
         </div>
