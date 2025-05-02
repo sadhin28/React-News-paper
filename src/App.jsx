@@ -19,7 +19,7 @@ function App() {
              <Nav></Nav>
            </div>
          {/* Blogs Component */}
-        <div className='md:flex gap-10 mt-30 '>
+        <div className='md:flex gap-10 mt-30 justify-center '>
           <Blogs handleAddToBookmark={handleAddToBookmark} ></Blogs>
           <Bookmarks bkMarks={bkMarks}></Bookmarks>
         </div>
