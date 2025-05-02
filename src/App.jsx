@@ -12,7 +12,7 @@ function App() {
        setBookmarks(newBookmark)
     }  
   return (
-    <div className='max-w-7xl mx-auto '>
+    <div className='max-w-7xl mx-auto  text-black bg-white'>
       <div>
         {/* Header Component */}
            <div>

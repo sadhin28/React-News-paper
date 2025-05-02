@@ -12,7 +12,7 @@ const Blogs = ({handleAddToBookmark}) => {
     },[])
     return (
        
-           <div className="md:w-2/3 grid gap-5">
+           <div className="md:w-2/3 grid gap-5 text-black bg-white">
                 <h2 className="text-center lg:text-3xl md:text-2xl text-xl font-bold">Blogs : {blogs.length}</h2>
                 {
                     blogs.map(blog =><Blog
