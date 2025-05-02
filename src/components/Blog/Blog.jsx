@@ -27,7 +27,7 @@ const Blog = ({ blog, handleAddToBookmark}) => {
                                 {posted_date}
                             </div>
                         </div>
-                        <button onClick={handleAddToBookmark} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
+                        <button onClick={()=>handleAddToBookmark(blog)} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
                     </div>
                      
                     <div>
@@ -49,6 +49,9 @@ const Blog = ({ blog, handleAddToBookmark}) => {
     );
 };
 Blog.prototype = {
-    blog: PropTypes.object.isRequired
+  
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.object.isRequired
 }
+
 export default Blog;
