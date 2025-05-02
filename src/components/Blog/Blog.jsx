@@ -40,7 +40,7 @@ const Blog = ({ blog, handleAddToBookmark}) => {
                         <div>{hashtags[2]}</div> 
                      </div>
                    
-                    <a className="text-[#6047EC] underline" href="">Mark as read</a>
+                    <p id="mark-as-read" className="text-[#6047EC] underline cursor-pointer">Mark as read</p>
                 </div>
             
             </div>
