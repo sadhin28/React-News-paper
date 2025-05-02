@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const Blog = ({ blog, handleAddToBookmark}) => {
+const Blog = ({ blog, handleAddToBookmark,handlemarkasread}) => {
 
     const {hashtags, posted_date, title, img, cover, reading_time, author } = blog
     return (
@@ -40,7 +40,9 @@ const Blog = ({ blog, handleAddToBookmark}) => {
                         <div>{hashtags[2]}</div> 
                      </div>
                    
-                    <p id="mark-as-read" className="text-[#6047EC] underline cursor-pointer">Mark as read</p>
+                   <div>
+                   <button onClick={()=>handlemarkasread(reading_time)} className="text-[#6047EC] underline cursor-pointer">Mark as read</button>
+                   </div>
                 </div>
             
             </div>
