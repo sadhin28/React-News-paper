@@ -6,7 +6,7 @@ import Bookmarks from './components/BookMark/Bookmarks'
 function App() {
 
   return (
-    <>
+    <div className='max-w-7xl mx-auto'>
       <div>
         {/* Header Component */}
            <div>
@@ -20,7 +20,7 @@ function App() {
          
       </div>
       
-    </>
+    </div>
   )
 }
 
