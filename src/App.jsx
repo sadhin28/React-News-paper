@@ -13,13 +13,13 @@ function App() {
     }  
   return (
     <div className='max-w-7xl mx-auto  text-black bg-white'>
-      <div>
+      <div className=' text-black bg-white'>
         {/* Header Component */}
            <div>
              <Nav></Nav>
            </div>
          {/* Blogs Component */}
-        <div className='md:flex gap-10 mt-30'>
+        <div className='md:flex gap-10 mt-30  text-black bg-white'>
           <Blogs handleAddToBookmark={handleAddToBookmark} ></Blogs>
           <Bookmarks bkMarks={bkMarks}></Bookmarks>
         </div>
