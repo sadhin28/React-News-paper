@@ -2,23 +2,20 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleAddToBookmark}) => {
 
     const {hashtags, posted_date, title, img, cover, reading_time, author } = blog
-    const bookMarks=(blog)=>{
-        blog.map
-    }
     return (
         <div className="mx-8 lg:mx-0 md:mx-0">
-            <div class="card bg-base-100 w-full shadow-sm">
+            <div className="card bg-base-100 w-full shadow-sm">
                 <figure>
                     <img
                         className="mt-3 h-89 w-full object-cover px-4 rounded-b-box"
                         src={cover}
                         alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <div class="flex justify-between items-center">
+                <div className="card-body">
+                    <div className="flex justify-between items-center">
                         <div className="flex gap-4 items-center">
                             <div className="avatar">
                                 <div className="h-12 rounded-full">
@@ -30,7 +27,7 @@ const Blog = ({ blog }) => {
                                 {posted_date}
                             </div>
                         </div>
-                        <button onClick={()=> bookMarks(blog)} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
+                        <button onClick={handleAddToBookmark} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
                     </div>
                      
                     <div>
