@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"; 
-import Blog from "../blog/blog";
+import Blog from "../Blog/Blog";
 const Blogs = ({handleAddToBookmark}) => {
     // useState 
     const [blogs,setBlogs]=useState([]);
