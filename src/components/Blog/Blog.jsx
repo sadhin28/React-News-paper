@@ -1,9 +1,13 @@
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+
 const Blog = ({ blog }) => {
 
     const {hashtags, posted_date, title, img, cover, reading_time, author } = blog
+    const bookMarks=(blog)=>{
+        blog.map
+    }
     return (
         <div className="mx-8 lg:mx-0 md:mx-0">
             <div class="card bg-base-100 w-full shadow-sm">
@@ -26,7 +30,7 @@ const Blog = ({ blog }) => {
                                 {posted_date}
                             </div>
                         </div>
-                        <button className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
+                        <button onClick={()=> bookMarks(blog)} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
                     </div>
                      
                     <div>

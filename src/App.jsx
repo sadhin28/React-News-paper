@@ -4,7 +4,7 @@ import Nav from './components/header/Nav'
 import Bookmarks from './components/BookMark/Bookmarks'
 
 function App() {
-
+  
   return (
     <div className='max-w-7xl mx-auto '>
       <div>
