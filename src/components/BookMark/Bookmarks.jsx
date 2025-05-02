@@ -1,14 +1,10 @@
 
-const Bookmarks = () => {
-   
+const Bookmarks = ({bkMarks}) => {
+
     return (
         <div className="md:w-1/3">
-            <h2>Bookmarks</h2>
-             <div>
-                {
-
-                }
-             </div>
+          <h2>BookMarks: {bkMarks.length}</h2>
+            
         </div>
     );
 };
