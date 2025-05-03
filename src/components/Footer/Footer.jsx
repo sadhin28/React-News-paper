@@ -1,18 +1,6 @@
-import { useEffect, useState } from "react";
 
 const Footer = () => {
-    
-    const [year, setYear] = useState(new Date().getFullYear());
-
-    useEffect(() => {
-      const interval = setInterval(() => {
-        const currentYear = new Date().getFullYear();
-        setYear(currentYear);
-      }, 1000 * 60);
   
-      return () => clearInterval(interval); 
-    }, []);
-    
     return (
       <footer class="p-4 bg-black text-white ">
       <aside class="flex flex-col lg:flex-row md:flex-row justify-center items-center gap-5">
