@@ -4,7 +4,8 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = ({ blog, handleAddToBookmark,handlemarkasread}) => {
 
-    const {hashtags, posted_date, title, img, cover, reading_time, author } = blog
+    const {id,hashtags, posted_date, title, img, cover, reading_time, author } = blog
+   
     return (
         <div className="mx-8 lg:mx-0 md:mx-0">
             <div className="card bg-base-100 w-full shadow-sm">
@@ -41,7 +42,7 @@ const Blog = ({ blog, handleAddToBookmark,handlemarkasread}) => {
                      </div>
                    
                    <div>
-                   <button onClick={()=>handlemarkasread(reading_time)} className="text-[#6047EC] underline cursor-pointer">Mark as read</button>
+                   <button onClick={()=>handlemarkasread(id,reading_time)} className="text-[#6047EC] underline cursor-pointer">Mark as read</button>
                    </div>
                 </div>
             
