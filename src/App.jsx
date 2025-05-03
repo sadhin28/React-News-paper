@@ -15,7 +15,9 @@ function App() {
     const handlemarkasread = (id,time)=>{
       setreadingTime(readingTime+time);
       
-      
+      const remainingBookMarks = bkMarks.filter(bookmark=> bookmark.id !== id);
+      setBookmarks(remainingBookMarks)
+
     }
 
   return (
