@@ -27,7 +27,7 @@ const Blog = ({ blog, handleAddToBookmark,handlemarkasread}) => {
                                 {posted_date}
                             </div>
                         </div>
-                        <button onClick={()=>handleAddToBookmark(blog)} className="btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
+                        <button onClick={()=>handleAddToBookmark(blog)} className="hover:bg-black hover:text-white btn font-stretch-condensed font-mono">{reading_time} min read <FontAwesomeIcon icon={faBookmark} /></button>
                     </div>
                      
                     <div>
