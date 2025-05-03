@@ -52,7 +52,7 @@ function App() {
         </div>
          
       </div>
-       <Footer></Footer>
+       <Footer profiles={profiles}></Footer>
     </div>
   )
 }

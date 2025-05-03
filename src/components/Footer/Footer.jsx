@@ -1,10 +1,10 @@
 
-const Footer = () => {
-  
+const Footer = ({profiles}) => {
+      const {profile}=profiles;
     return (
       <footer class="p-4 bg-black text-white ">
       <aside class=" mt-5 flex flex-col lg:flex-row md:flex-row justify-center items-center gap-5">
-        <img className="rounded-full h-10 w-10" src="/src/images/3.png" alt="" />
+        <img className="rounded-full h-10 w-10" src={profile} alt="Footer IMG" />
         <p>Copyright © {new Date().getFullYear()} - All right reserved By Knowledge Cafe</p>
       </aside>
       <nav class="flex  gap-3 justify-center mt-10 mb-10 lg:mt-0 md:mt-0 ">
