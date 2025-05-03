@@ -3,6 +3,7 @@ import Blogs from './components/Blogs/Blogs'
 import Nav from './components/header/Nav'
 import Bookmarks from './components/BookMark/Bookmarks'
 import { useEffect, useState } from 'react'
+import Footer from './components/Footer/Footer'
 
 function App() {
     const [bkMarks,setBookmarks]=useState([])
@@ -32,7 +33,7 @@ function App() {
    },[])
   return (
     <div className='max-w-7xl mx-auto '>
-      <div >
+      <div className='mb-20'>
         {/* Header Component */}
            <div>
              <Nav profiles={profiles}></Nav>
@@ -51,7 +52,7 @@ function App() {
         </div>
          
       </div>
-      
+       <Footer></Footer>
     </div>
   )
 }

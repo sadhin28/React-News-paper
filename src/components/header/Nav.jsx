@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+
 
 
 function Nav({profiles}) {
