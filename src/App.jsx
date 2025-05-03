@@ -15,6 +15,11 @@ function App() {
     const handlemarkasread = time=>{
       setreadingTime(readingTime+time);
     }
+
+     
+ const handelRemoveFromCart = id =>{
+    console.log(id)
+}
   return (
     <div className='max-w-7xl mx-auto '>
       <div >
@@ -30,6 +35,7 @@ function App() {
           
           <Bookmarks bkMarks={bkMarks}
           readingTime={readingTime}
+          handelRemoveFromCart={handelRemoveFromCart}
           ></Bookmarks>
           
         </div>
