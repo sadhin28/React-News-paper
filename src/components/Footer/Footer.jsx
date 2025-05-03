@@ -14,12 +14,12 @@ const Footer = () => {
     }, []);
     
     return (
-      <footer class=" h-30 footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
-      <aside class="grid-flow-col items-center">
+      <footer class="p-4 bg-black text-white ">
+      <aside class="flex flex-col lg:flex-row md:flex-row justify-center items-center gap-5">
         <img className="rounded-full h-10 w-10" src="/src/images/3.png" alt="" />
         <p>Copyright © {new Date().getFullYear()} - All right reserved By Knowledge Cafe</p>
       </aside>
-      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <nav class="flex  gap-3 justify-center mt-10 mb-10 lg:mt-0 md:mt-0 ">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
