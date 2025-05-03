@@ -3,7 +3,7 @@ const Footer = () => {
   
     return (
       <footer class="p-4 bg-black text-white ">
-      <aside class="flex flex-col lg:flex-row md:flex-row justify-center items-center gap-5">
+      <aside class=" mt-5 flex flex-col lg:flex-row md:flex-row justify-center items-center gap-5">
         <img className="rounded-full h-10 w-10" src="/src/images/3.png" alt="" />
         <p>Copyright © {new Date().getFullYear()} - All right reserved By Knowledge Cafe</p>
       </aside>
